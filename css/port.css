@@ -1,0 +1,16 @@
+.call_img {margin-top: 20px;
+}
+
+.call_img h3{
+	font-size: 24px; 
+	font-weight: 600; 
+	text-align: center; 
+	font-family: 'Playball';}
+
+.call_img img{
+	height: 360px;
+	width: 360px;
+    margin: 10px auto;
+	object-fit: cover;
+    object-position: top; 
+  }
