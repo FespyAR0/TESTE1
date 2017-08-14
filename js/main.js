@@ -14,6 +14,6 @@ function iniSlide(){
 	nextSlide.addClass('active');
 }
 
-setInterval(iniSlide, 4000);
+setInterval(iniSlide, 6000);
 
 
