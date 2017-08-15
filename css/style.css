@@ -5,7 +5,7 @@ img { /* Imagem fluída */
 
 html, body{  font-family: 'Roboto', sans-serif; background: #fefefe fixed; background-size: cover;}
 
-h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
+h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Dancing Script', cursive;}
 
 
 .titulo{ padding: 40px 0px 0px 0px;   text-align: center; }
@@ -28,30 +28,15 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
 
 .titulo p { max-width: 800px; font-size: 14px; margin: 0 auto; color: #555555; line-height: 2em; letter-spacing: 0.1em;}
 
-
 .call_to{ 
     clear: both;
     padding: 40px 0px; 
     text-align: center; }
 
-.call_to p{
-  color:#555555;
-  padding-bottom: 10px;
-}
-
-.call_to p:after{
-  display: block;
-  content: '';
-  width: 60px;
-  height: 2px;
-  background: #111111;
-  margin: 10px auto 30px auto;
-
-}
-
 .call_to a{
-    font-size: 18px;
-    padding: 10px 50px; 
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding: 20px 50px; 
     border: 1px solid #111111; 
     color: #111111; 
     position: relative; 
@@ -111,10 +96,11 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
 .menu_nav.active{
    border-top: none; 
    width: 100%; 
-   position: fixed;  
+   position: relative;  
    top: 0; 
    left: 0;
    background: rgba(0,0,0,.8);
+   z-index: 3000;
  }
 
 
@@ -193,9 +179,9 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
 .descricao_imagem h1{
     font-weight: 300;
     font-family: 'Roboto';
-    font-size: 24px;
+    font-size: 48px;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 
 .descricao_imagem h1:after{
@@ -226,7 +212,8 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
 }
 
 .call_to_post a{
-  font-size: 14px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 10px 30px;
   border: 2px solid rgba(255,255,255,.2);
@@ -377,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
 /* Portfólio Galerias*/
 
 .albums .descricao_cover h1{
-    font-family: 'Playball', cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 60px;
     text-transform: none;
     letter-spacing: 0;
@@ -400,13 +387,19 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
 
 .sobre_conteudo{
   margin-top: 20px;
+  color: #555555;
 }
 
-.sobre_texto p{
+.sobre_descri h1{
+  text-align: center;
+  font-size: 60px;
+  padding-top: 60px;
+}
+
+.sobre_descri p{
   letter-spacing: 0.1em;
   font-size: 14px;
   line-height: 2em;
-  color: #555555;
 }
 
 .sobre_img img{
@@ -509,18 +502,30 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
 }
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 960px){
 
 .check_menu { display: block; }
 
-.menu_nav.activex{
-  height: 100vh;
-  background: rgba(255,255,255,.9);
+.slide_item .descricao_imagem.active, .section_cover .descricao_cover.active{
+    z-index: -1; 
 }
+
+.menu_nav ul li a{ color: #111111; }
+
+.menu_nav ul{display: none;}
+
+.menu_nav.active{
+  height: 100vh;
+  position: fixed;
+  background: rgba(255,255,255,.9);
+  z-index: 6;
+}
+
+.menu_nav.active ul{display: block;}
 
 .menu_nav .mobile-btn{
   display: block;
-  color: #111111;
+  color: rgba(255,255,255,.8);
   width: 36px;
   height: 42px;
   border-top: 4px solid;
@@ -545,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
 
 .menu_nav.active .mobile-btn {
   display: block;
-  color: #111111;
+  color: #1111111;
   width: 36px;
   height: 36px;
   border-top: 4px solid;
@@ -571,6 +576,10 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
 
 .menu_nav.active .mobile-btn.active, .mobile-btn.active {
   border-top-color: transparent;
+}
+
+.mobile-btn.active{
+  color: #111111;
 }
 
 .mobile-btn.active::after {
@@ -602,7 +611,7 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
 .menu_nav .ul_menu li a{font-size: 18px; }
 
 .ul_menu > *{ width: 100%; }
-.ul_menu {   margin: -100%;  display: block; padding-top: 10px;}
+.ul_menu {   margin: 0%;  display: block; padding-top: 10px;}
 
 .redesocial{    display: block; margin: 0; padding: 0px 80px;} 
 
@@ -613,9 +622,54 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Playball', cursive;}
     margin:25px 10px 20px 0px;
 }
 
-.activemenu{
-  margin: 0;
 }
 
+
+
+
+.js .descricao_cover h1{ opacity: 0; }
+.js .descricao_cover h2{ opacity: 0; }
+
+@keyframes slideinup {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
+
+.slideinup {
+          animation-name: slideinup;
+          animation-duration: 2s;
+          animation-fill-mode: both;
+
+}
+
+
+@keyframes slideindown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.slideindown {
+          animation-name: slideindown;
+          animation-duration: 2s;
+          animation-fill-mode: both;
+
+}
+
+
+
+
 
