@@ -90,21 +90,6 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Dancing Script', cur
 .check_menu { display: none; }
 #bt_menu{ display: none; }
 
-
-
-.menu_nav { transition: all .5s; }
-
-.menu_nav.active{
-   border-top: none; 
-   width: 100%; 
-   position: relative;  
-   top: 0; 
-   left: 0;
-   background: rgba(0,0,0,.8);
-   z-index: 3000;
- }
-
-
 .menu_nav ul li a{ 
     color: rgba(255,255,255,1); 
     font-size: 14px;
@@ -517,9 +502,13 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Dancing Script', cur
 
 .menu_nav.active{
   height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
   position: fixed;
   background: rgba(0,0,0,.9);
   z-index: 6;
+  transition: .5s;
 }
 
 .menu_nav.active ul{display: block;}
