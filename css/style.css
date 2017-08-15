@@ -80,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Dancing Script', cur
 
 
 .logo img {
+  max-width: 15%;
     padding-top: 20px;
     margin: 0px auto 20px auto;
 }
@@ -151,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Dancing Script', cur
 
 .slide_item.active img{
     opacity: 1;
-    transition: 1s;
+    transition: s;
 
 }
 

@@ -7,6 +7,8 @@
 
 /*Estilo para smartphone*/
 @media only screen and (max-width: 767px) {
+.logo img {
+  max-width: 50%;}
 
 .titulo{ padding: 20px 0px 0px 0px; 
 	text-align: center; }
@@ -14,6 +16,11 @@
 .titulo h1{ font-size: 28px;}
 
 .titulo p { font-size: 12px; }
+
+.call_to{ 
+    clear: both;
+    padding: 20px 0px; 
+    text-align: center; }
 
 .call_to a{
     font-size: 10px;
@@ -67,12 +74,14 @@
 
 .descricao_cover h2{
     font-size: 10px;
-    max-width: 400px;
+    max-width: 340px;
 }
 
 /* /SECTIONS */
 
 /* PORTFÓLIO */
+
+.albums .descricao_cover h1{ font-size: 36px; }
 
 .album img{
   height: 150px;
