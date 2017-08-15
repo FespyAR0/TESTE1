@@ -510,14 +510,14 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Dancing Script', cur
     z-index: -1; 
 }
 
-.menu_nav ul li a{ color: #111111; }
+.menu_nav ul li { margin-top: 60px; }
 
 .menu_nav ul{display: none;}
 
 .menu_nav.active{
   height: 100vh;
   position: fixed;
-  background: rgba(255,255,255,.9);
+  background: rgba(0,0,0,.9);
   z-index: 6;
 }
 
@@ -529,7 +529,7 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Dancing Script', cur
   width: 36px;
   height: 42px;
   border-top: 4px solid;
-  margin: 0 auto;
+  margin: 30px auto;
   float: none;
   position: relative;
   cursor: pointer;
@@ -550,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {  line-height: 1.4em; font-family: 'Dancing Script', cur
 
 .menu_nav.active .mobile-btn {
   display: block;
-  color: #1111111;
+  color: rgba(255,255,255,.8);
   width: 36px;
   height: 36px;
   border-top: 4px solid;
